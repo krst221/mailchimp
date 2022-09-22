@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+      <main>
+        <div>
+          <div class="image">
+            <img src="./img/chimp.png" alt="chimp" width="180">
+          </div>
+          <div class="form">
+            <h1>Welcome to Mailchimp</h1>
+            <p>Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a href="https://www.mailchimp.com">Log in</a></p>
+            <form>
+              <fieldset>
+                <label for="mail"><h3>Email</h3>
+                  <input class="texto" type="email" name="mail" id="mail" required>
+                </label>
+                <label for="name"><h3>Username</h3>
+                  <input class="texto" type="text" name="name" id="name" required>
+                </label>
+                <label for="pw"><h3>Password</h3>
+                  <input class="texto" type="password" name="pw" id="pw" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="La contraseña no cumple las condiciones requeridas.">
+                  <div>
+                    <ul class="lil">
+                      <li>One lowercase character</li>
+                      <li>One uppercase character</li>
+                      <li>One number</li>
+                    </ul>
+                    <ul class="lir">
+                      <li>One special character</li>
+                      <li>8 characters minimum</li>
+                    </ul>
+                  </div>
+                </label> 
+                <label for="spam">
+                  <div class="divp">
+                    <div>
+                      <button type="submit" id="pw">Sign Up</button>
+                    </div>
+                    <div>
+                      <input class="cbox" type="checkbox" name="spam" id="spam">
+                    </div>
+                    <div>
+                      <p>I don't want to receive emails about new Mailchamp products, best practices, or special offers.</p>
+                    </div>
+                  </div>
+                </label>
+              </fieldset>     
+            </form>
+            <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href=""https://www.mailchimp.com"">Terms of Use </a>and <a href="https://www.mailchimp.com">Privacy Policy. </a></p>
+          </div>
+        </div>
+      </main>
+    </body>
+</html>
